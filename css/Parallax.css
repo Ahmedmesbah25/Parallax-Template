@@ -1,0 +1,475 @@
+/* start globel css */
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+.continer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .continer {
+        width: 750px
+    }
+}
+@media (min-width: 992px) {
+    .continer {
+        width: 970px
+    }
+}
+@media (min-width: 1200px) {
+    .continer {
+        width: 1170px
+    }
+}
+ul {
+    list-style: none;
+}
+/* end globel css */
+/* start nav  */
+nav {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: url(../img/pexels-photo-2741648-2.jpeg);
+    background-size: cover;
+    height: 65vh;
+    position: relative;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav .links a.active {
+    background-color: ;
+}
+.nav .links .more {
+    position: relative;
+    
+}
+.nav .links a ul  {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 250px;
+    display: none;
+    
+}
+.nav .links a:hover ul  {
+    display: block;
+
+}
+.nav .links a ul  li:hover{ 
+padding-left: 20px;
+}
+
+.nav .links  .more .ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    border-bottom:  1px solid #888;
+    text-align: center;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.nav .links a {
+    padding:  20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.nav .links a:hover {
+    background-color: #888;
+    color: #fff;
+    transition: 0.8s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.nav .search  i{
+    padding: 20px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.nav .search:hover i {
+    background-color: #999;
+    color:#fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+nav h1 {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50% , -50%)  ;
+     -webkit-transform: translate(-50% , -50%)  ;
+     -moz-transform: translate(-50% , -50%)  ;
+     -ms-transform: translate(-50% , -50%)  ;
+     -o-transform: translate(-50% , -50%)  ;
+     color: #fff;
+     word-spacing: 20px;
+     letter-spacing: 5px
+}
+@media (min-width:768px) {
+    .nav .fa-bars {
+    display: none;
+}
+}
+
+@media (max-width:767px) {
+   
+    .nav .links  {
+        display: none;
+    }
+    .nav .fa-bars:hover + .links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff4d;
+    }
+    .nav .links a {
+        padding: 10px
+    }
+   nav h1 {
+    display: none;
+   }
+}
+/* end nav  */
+/* start about-me  */
+.continer {
+  padding-top: 100px;
+  /* padding-bottom: 100px; */
+}
+.continer h2 {
+    text-align: center;
+}
+.continer h2+ p {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+}
+.continer p:nth-of-type(2) {
+    line-height: 1.8;
+    color:#555;
+}
+.continer .myname {
+    padding-top: 100px;
+    /* padding-bottom: 50px; */
+    display: flex;
+    justify-content: space-between;
+   
+}
+.continer .myname .name {
+    flex-basis: 50%;
+}
+.continer .myname .name .img img{
+    max-width: 100%;
+    opacity: 0.5;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.continer .myname .name .img img:hover {
+    opacity: 1;
+}
+.continer .myname .name h3 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.continer .myname .caption {
+    flex-basis: 50%;
+}
+.continer .myname .caption p {
+color: #555;
+line-height: 1.7 ;
+text-align:left
+
+}
+.continer p:last-of-type {
+    text-align: center;
+    color:#555
+}
+@media(max-width: 767px) {
+    .continer .myname {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+}
+/* end about-me  */
+/* start statics */
+.statics .continer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.statics p {
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+.statics .continer .box { 
+    margin-bottom: 50px;
+}
+.statics .continer .box  h3 { 
+    letter-spacing: 15px;
+    margin-bottom: 20px;
+}
+.statics .continer .box  div { 
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 50px
+}
+.statics .continer .box  div span { 
+    display: block;
+    background-color: #616161;
+    height: 100%;
+    text-align: center;
+    line-height: 2.5;
+    color:white
+}
+.statics .number {
+    background-color: #616161;
+}
+.statics .number .continer {
+    display: flex;
+    justify-content: space-between;
+}
+.statics .number .continer .box-number {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal
+}
+.statics .number .continer .box-number h3,
+.statics .number .continer .box-number p {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+.statics .number .continer .box-number p { 
+    font-size: 20px;
+}
+@media(max-width: 767px) {
+    .statics .continer .box { 
+        width: 95%;
+    }
+    .statics .continer .box  h3 { 
+        letter-spacing: 5px;
+        font-size: 23px;
+
+    }
+    .statics .continer .box  div { 
+        width: 100%;
+        height: 30px
+    }
+    .statics .continer .box  div span{ 
+        line-height: 1.5;
+
+    }
+    .statics .number .continer .box-number h3,
+    .statics .number .continer .box-number p {
+    font-size: 18px;
+}
+}
+
+/* end statics */
+/* strt portfoloio */
+.portfolio {
+    background-image: url(../img/pastel-.jpg);
+    background-size: cover;
+    height:50vh;
+    position: relative;
+}
+.portfolio:before {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(97 97 97/ 70%)
+}
+.portfolio h2 {
+    font-size: 40px;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 15px;
+    box-shadow:0 0 50px 0 black ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+/* end portfoloio */
+/* start my-work */
+.my-work {
+
+}
+.my-work .continer {
+    
+}
+.my-work .continer .text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.my-work .continer .text h3 {
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 20px;
+ }
+ .my-work .continer .text p { 
+     line-height: 1.9;
+     color: #555;
+ }
+
+.my-work .continer .image {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px
+}
+.my-work .continer .image .img {
+    flex-basis: 25%;
+    position: relative;
+    overflow: hidden;
+}
+.my-work .continer .image .img img{
+    max-width: 100%;
+}
+.my-work .continer .image .img h4 {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.my-work .continer .image .img:hover h4{
+    bottom: 0%;
+    background-color: rgba(255, 255, 255, 0.377);
+}
+
+.my-work .continer button {
+    display: block;
+    margin: 50px auto;
+    padding: 10px 20px;
+    background: #eee;
+    font-weight: normal;
+    text-transform: uppercase;
+    border:none
+}
+/* end my-work */
+/* start contact  */
+.contact {
+    background-image: url(../img/original.jpg);
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+    max-width:  100%;
+}
+.contact::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0/50%)
+}
+.contact h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 5px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translateX(-50%);
+     -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     -o-transform: translateX(-50%);
+}
+@media(max-width: 767px) {
+    .contact {
+        height: 160px;
+    }
+}
+
+.addres {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.addres .box img {
+    max-width: 100%;
+}
+.addres .continer .box-adress .text-2 p{
+padding: 10px;}
+
+.addres .box-adress {
+    flex-basis: 70%
+
+}
+ form input{
+
+    padding: 8px;
+    margin: 10px 0;
+}
+form input[type="name"],
+form input[type="email"] {
+    width: 49%;
+}
+form input[type="text"] {
+    width: 100%;
+    padding: 8px 0;
+}
+.addres .box img {
+    width: 300px;
+    height: 200px;
+}
+@media (max-width: 767px) {
+    .addres {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* end contact  */
